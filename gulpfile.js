@@ -1,4 +1,5 @@
-const elixir = require('laravel-elixir');
+const elixir = require('laravel-elixir'),
+      php = require('gulp-connect-php');
 
 require('laravel-elixir-vue-2');
 
@@ -15,5 +16,18 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .webpack('app.js').browserSync({
+      files: [
+        'public/css/*.css',
+        'resources/assets/**/*',                     // This is the one required to get the CSS to inject
+        'resources/views/**/*.blade.php',       // Watch the views for changes & force a reload
+        'app/**/*.php',
+        'routes/**/*.php',                      // Watch the app files for changes & force a reload
+      ],
+      proxy: "localhost:8000",
+      port: 8000
+    });
+  php.server({
+      base: './'
+  });
 });

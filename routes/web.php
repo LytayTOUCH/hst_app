@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('webpages.index');
+  return view('welcome');
+});
+Route::get('/test1', function(){
+  return view('webpages.test1');
 });
