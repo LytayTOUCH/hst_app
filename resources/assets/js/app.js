@@ -21,8 +21,8 @@ const app = new Vue({
 
 $(document).ready(function(){
     $("p").click(function(){
-        // $(this).hide();
-        console.log("Me is clicked !");
-        $('.ui.modal').modal('show');
+        $('.ui.modal').modal({
+          duration: 200
+        }).modal('show');
     });
 });
