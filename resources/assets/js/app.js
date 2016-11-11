@@ -6,7 +6,7 @@
  */
 
 require('./bootstrap');
-
+// require('./semantic');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -17,4 +17,12 @@ Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app'
+});
+
+$(document).ready(function(){
+    $("p").click(function(){
+        // $(this).hide();
+        console.log("Me is clicked !");
+        $('.ui.modal').modal('show');
+    });
 });

@@ -1,6 +1,4 @@
-const elixir = require('laravel-elixir'),
-      php = require('gulp-connect-php');
-
+const elixir = require('laravel-elixir');
 require('laravel-elixir-vue-2');
 
 /*
@@ -15,9 +13,11 @@ require('laravel-elixir-vue-2');
  */
 
 elixir((mix) => {
-    mix.sass('app.scss')
-       .webpack('app.js').browserSync({
+    mix.sass(['app.scss', './resources/assets/vendors/semantic-ui/dist/semantic.css'], './public/css/app.css')
+       .webpack(['app.js', './resources/assets/vendors/semantic-ui/dist/semantic.js'], './public/js/app.js')
+       .browserSync({
       files: [
+        'gulpfile.js',
         'public/css/*.css',
         'resources/assets/**/*',                     // This is the one required to get the CSS to inject
         'resources/views/**/*.blade.php',       // Watch the views for changes & force a reload
@@ -27,7 +27,5 @@ elixir((mix) => {
       proxy: "localhost:8000",
       port: 8000
     });
-  php.server({
-      base: './'
-  });
+    mix.copy('./resources/assets/vendors/semantic-ui/dist/themes/default/assets', './public/css/themes/default/assets');
 });
