@@ -1,4 +1,5 @@
-const elixir = require('laravel-elixir');
+const elixir = require('laravel-elixir'),
+  del = require('del');
 require('laravel-elixir-vue-2');
 
 /*
@@ -12,11 +13,19 @@ require('laravel-elixir-vue-2');
  |
  */
 
+elixir.extend('remove', function(path) {
+    new elixir.Task('remove', function() {
+        del(path);
+    });
+});
+
 elixir((mix) => {
-    mix.sass(['app.scss', './resources/assets/vendors/semantic-ui/dist/semantic.css'], 'public/css/app.css')
+    mix.remove(['public/css/app.css', 'public/js/app.js' ])
+       .sass(['app.scss', './resources/assets/vendors/semantic-ui/dist/semantic.css'], 'public/css/app.css')
        .webpack(['app.js', './resources/assets/vendors/semantic-ui/dist/semantic.js'], 'public/js/app.js')
        .browserSync({
       files: [
+        'gulpfile.js',
         'public/css/*.css',
         'resources/assets/**/*',                     // This is the one required to get the CSS to inject
         'resources/views/**/*.blade.php',       // Watch the views for changes & force a reload
