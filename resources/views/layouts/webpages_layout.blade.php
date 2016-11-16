@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title', 'Hong Star Travel & Tours')</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -21,9 +21,9 @@
     </script>
 </head>
 <body>
-
+    @include('webpages.header')
     @yield('body')
-
+    @include('webpages.footer')
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>
