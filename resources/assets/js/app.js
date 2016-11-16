@@ -16,7 +16,13 @@ require('./bootstrap');
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+      vue_data: "Hello VueJS !"
+    }
+    method:{
+      
+    }
 });
 
 $(document).ready(function(){
@@ -25,4 +31,5 @@ $(document).ready(function(){
           duration: 200
         }).modal('show');
     });
+    $('.ui.dropdown').dropdown();
 });

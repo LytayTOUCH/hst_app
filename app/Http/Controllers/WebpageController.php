@@ -8,7 +8,9 @@ class WebpageController extends Controller
 {
     //
     public function index(){
-      return view('webpages.index');
+      $data['test']="Test Data from Controller Webpages!";
+      $form['modal']=view('webpages.forms.modal', compact('data'));
+      return view('webpages.index', compact('form'));
     }
     public function show_local_tour_page(){
       return view('webpages.local_tour');

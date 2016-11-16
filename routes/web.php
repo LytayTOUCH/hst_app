@@ -12,7 +12,7 @@
 */
 
 Route::get('/','WebpageController@index');
-Route::get('/local_tour','WebpageController@show_local_tour_page');
+Route::get('/domestic_tour.html','WebpageController@show_local_tour_page');
 Route::get('/international_tour','WebpageController@show_intl_tour_page');
 Route::get('/air_ticket','WebpageController@show_air_ticket_page');
 Route::get('/bus_ticket','WebpageController@show_bus_ticket_page');

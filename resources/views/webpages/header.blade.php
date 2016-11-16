@@ -13,12 +13,56 @@
 <div class="ui container">
 
   <div class="ui secondary menu">
-    <a href="{{ url('/') }}" class="item">Home</a>
-    <a href="{{ url('/local_tour') }}" class="item">Domestic Tours</a>
-    <a href="{{ url('/international_tour') }}" class="item">International Tours</a>
-    <a href="{{ url('/air_ticket') }}" class="item">Air Ticket</a>
-    <a href="{{ url('/bus_ticket') }}" class="item">Bus Ticket</a>
-    <a href="{{ url('/boat_ticket') }}" class="item">Boat Ticket</a>
-  </div>
+    <!-- <a href="{{ url('/') }}" class="item">
+      <i class="home icon big"></i>
+    </a> -->
 
+    <div class="ui dropdown item">
+      <i class="street view icon"></i> <b>Tours</b>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a href="{{ url('/domestic_tour.html') }}" class="item"><i class="map icon"></i>Domestic Tours</a>
+        <a href="{{ url('/international_tour') }}" class="item"><i class="send outline icon"></i>International Tours</a>
+      </div>
+    </div>
+
+    <div class="ui dropdown item">
+      <i class="ticket icon"></i><b>Ticket Services</b>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a href="{{ url('/air_ticket') }}" class="item"><i class="plane icon"></i>Air Ticket</a>
+        <a href="{{ url('/bus_ticket') }}" class="item"><i class="bus icon"></i>Bus Ticket</a>
+        <a href="{{ url('/boat_ticket') }}" class="item"><i class="ship icon"></i>Boat Ticket</a>
+      </div>
+    </div>
+
+    <div class="ui dropdown item">
+      <i class="newspaper icon"></i><b>Passport Services</b>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a href="{{ url('/boat_ticket') }}" class="item"><i class="share alternate square icon"></i>International VISA</a>
+        <a href="{{ url('/boat_ticket') }}" class="item"><i class="undo icon"></i>Khmer VISA Extend</a>
+        <a href="{{ url('/boat_ticket') }}" class="item"><i class="write square icon"></i>Khmer Passport</a>
+      </div>
+    </div>
+
+    <a href="{{ url('/boat_ticket') }}" class="item"><i class="location arrow icon"></i><b>Contact Us</b></a>
+    <div class="ui inline dropdown item">
+        <div class="text">
+          <a href="#"><i class="gb flag"></i></a>
+        </div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">
+            <a href="#gb"><i class="gb flag"></i></a>
+          </div>
+          <div class="item">
+            <a href="#kh"><i class="kh flag"></i></a>
+          </div>
+          <div class="item">
+            <a href="#cn"><i class="cn flag"></i></a>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>
