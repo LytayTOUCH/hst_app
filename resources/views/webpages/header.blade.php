@@ -22,7 +22,7 @@
       <i class="dropdown icon"></i>
       <div class="menu">
         <a href="{{ url('/domestic_tour.html') }}" class="item"><i class="map icon"></i>Domestic Tours</a>
-        <a href="{{ url('/international_tour') }}" class="item"><i class="send outline icon"></i>International Tours</a>
+        <a href="{{ url('/international_tour.html') }}" class="item"><i class="send outline icon"></i>International Tours</a>
       </div>
     </div>
 
@@ -30,9 +30,9 @@
       <i class="ticket icon"></i><b>Ticket Services</b>
       <i class="dropdown icon"></i>
       <div class="menu">
-        <a href="{{ url('/air_ticket') }}" class="item"><i class="plane icon"></i>Air Ticket</a>
-        <a href="{{ url('/bus_ticket') }}" class="item"><i class="bus icon"></i>Bus Ticket</a>
-        <a href="{{ url('/boat_ticket') }}" class="item"><i class="ship icon"></i>Boat Ticket</a>
+        <a href="{{ url('/air_ticket.html') }}" class="item"><i class="plane icon"></i>Air Ticket</a>
+        <a href="{{ url('/bus_ticket.html') }}" class="item"><i class="bus icon"></i>Bus Ticket</a>
+        <a href="{{ url('/boat_ticket.html') }}" class="item"><i class="ship icon"></i>Boat Ticket</a>
       </div>
     </div>
 
@@ -40,13 +40,13 @@
       <i class="newspaper icon"></i><b>Passport Services</b>
       <i class="dropdown icon"></i>
       <div class="menu">
-        <a href="{{ url('/boat_ticket') }}" class="item"><i class="share alternate square icon"></i>International VISA</a>
-        <a href="{{ url('/boat_ticket') }}" class="item"><i class="undo icon"></i>Khmer VISA Extend</a>
-        <a href="{{ url('/boat_ticket') }}" class="item"><i class="write square icon"></i>Khmer Passport</a>
+        <a href="{{ url('/international_visa.html') }}" class="item"><i class="share alternate square icon"></i>International VISA</a>
+        <a href="{{ url('/khmer_visa_renew.html') }}" class="item"><i class="undo icon"></i>Khmer VISA Renew</a>
+        <a href="{{ url('/khmer_passport.html') }}" class="item"><i class="write square icon"></i>Khmer Passport</a>
       </div>
     </div>
 
-    <a href="{{ url('/boat_ticket') }}" class="item"><i class="location arrow icon"></i><b>Contact Us</b></a>
+    <a href="{{ url('/contact_us.html') }}" class="item"><i class="location arrow icon"></i><b>Contact Us</b></a>
     <div class="ui inline dropdown item">
         <div class="text">
           <a href="#"><i class="gb flag"></i></a>

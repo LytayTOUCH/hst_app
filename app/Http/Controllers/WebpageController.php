@@ -28,16 +28,16 @@ class WebpageController extends Controller
       return view('webpages.boat_ticket');
     }
     public function show_intl_visa_page(){
-
+      return view('webpages.intl_visa');
     }
-    public function show_khmer_extend_visa_page(){
-
+    public function show_khmer_visa_renew_page(){
+      return view('webpages.khmer_visa_renew');
     }
-    public function show_cam_passport_page(){
-
+    public function show_khmer_passport_page(){
+      return view('webpages.contact_us');
     }
     public function show_contact_us_page(){
-
+      return view('webpages.contact_us');
     }
 
 }

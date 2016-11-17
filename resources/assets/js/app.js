@@ -19,9 +19,12 @@ const app = new Vue({
     el: '#app',
     data: {
       vue_data: "Hello VueJS !"
-    }
-    method:{
-      
+    },
+    methods:{
+      btn_test(){
+        // console.log("Btn Test VueJS is clicked!");
+        this.vue_data = "VueJS is awesome !";
+      }
     }
 });
 

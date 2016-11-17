@@ -20,7 +20,7 @@ elixir.extend('remove', function(path) {
 });
 
 elixir((mix) => {
-    mix.remove(['public/css', 'public/js', 'public/images'])
+    mix.remove(['public/css/**/*.*', 'public/js/**/*.*', 'public/images/**/*.*'])
        .sass(['app.scss', './resources/assets/vendors/semantic-ui/dist/semantic.css'], 'public/css/app.css')
        .webpack(['app.js', './resources/assets/vendors/semantic-ui/dist/semantic.js'], 'public/js/app.js')
        .browserSync({
@@ -35,7 +35,6 @@ elixir((mix) => {
       proxy: "localhost:8000",
       port: 8000
     });
-    mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets');
-    mix.copy('resources/assets/images', 'public/images');
+    mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets').copy('resources/assets/images', 'public/images');
 
 });
