@@ -13,8 +13,9 @@
   click me
 </p>
 
-
-
+<div id="example">
+<example-component></example-component>
+</div>
 
 <div id="app">
   <button v-on:click="btn_test" class="ui primary button mini">
