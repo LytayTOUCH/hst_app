@@ -21,13 +21,13 @@
     </script>
 </head>
 <body>
-  <div class="ui fluid container">
+  @include('webpages.header')
+  <div class="ui fluid container" style="padding-top:60px;">
 
-    @include('webpages.header')
     @yield('body')
-    @include('webpages.footer')
 
   </div>
+  @include('webpages.footer')
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>

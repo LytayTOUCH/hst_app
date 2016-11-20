@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+require('./semantic.behavior');
+
 // require('./semantic');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27,16 +29,7 @@ const app = new Vue({
     methods:{
       btn_test(){
         // console.log("Btn Test VueJS is clicked!");
-        this.vue_data = "VueJS is awesome !";
+        this.vue_data = this.vue_data.split('').reverse().join('')
       }
     }
-});
-
-$(document).ready(function(){
-    $("p").click(function(){
-        $('.ui.modal').modal({
-          duration: 200
-        }).modal('show');
-    });
-    $('.ui.dropdown').dropdown();
 });

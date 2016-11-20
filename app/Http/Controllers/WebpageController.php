@@ -8,7 +8,7 @@ class WebpageController extends Controller
 {
     //
     public function index(){
-      $data['test']="Test Data from Controller Webpages!";
+      $data['test']="Test Data from Controller Index Webpages!";
       $form['modal']=view('webpages.forms.modal', compact('data'));
       return view('webpages.index', compact('form'));
     }
