@@ -20,6 +20,7 @@
       <div class="ui segement">
       <!-- <h1 class="header">Master Degree of Computer Science</h1> -->
       <h2 class="header"> Contact US Page</h2>
+      {{ trans('translang.welcome') }}
       <!-- <h3 class="header">Presented By Mr. Lytay TOUCH</h3>
       <h3 class="header">Academic Year 2015</h3> -->
 

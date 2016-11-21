@@ -4,31 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>@yield('title', 'Hong Star Travel & Tours')</title>
-
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
     <!-- Scripts -->
-    <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
-    </script>
+    <script>window.HongStar = <?php echo json_encode(['csrfToken' => csrf_token(),]); ?></script>
 </head>
 <body>
   @include('webpages.header')
-  <div class="ui fluid container" style="padding-top:60px;">
-
+  <div class="ui fluid container" style="padding-top:43px;">
     @yield('body')
-
   </div>
   @include('webpages.footer')
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>

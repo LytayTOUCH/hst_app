@@ -16,7 +16,11 @@
       <h2 class="header"> Contact US Page</h2>
       <!-- <h3 class="header">Presented By Mr. Lytay TOUCH</h3>
       <h3 class="header">Academic Year 2015</h3> -->
-
+      <button class="ui icon button">
+      <i class="cloud icon"></i>
+    </button>
+      {{ trans('translang.welcome') }}
+      <i class="ui home icon"></i>
       <h1>Webpages Index Page!</h1>
       <h4>Test broswerSync!</h4>
       <h4>Checkup with browserSync !</h4>

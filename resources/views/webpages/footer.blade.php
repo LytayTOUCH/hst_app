@@ -1,3 +1,15 @@
+<div class="ui centered grid">
+  <div class="computer only row">
+    <div class="column">Column</div>
+  </div>
+  <div class="six wide tablet eight wide computer column">six wide tablet eight wide computer column</div>
+  <div class="six wide tablet eight wide computer column">six wide tablet eight wide computer column</div>
+  <div class="six wide tablet eight wide computer column">six wide tablet eight wide computer column</div>
+  <div class="six wide tablet eight wide computer column">six wide tablet eight wide computer column</div>
+  <div class="six wide tablet eight wide computer column">six wide tablet eight wide computer column</div>
+</div>
+
+
 <div class="ui fluid container">
   @include('webpages.facebook')
 </div>
