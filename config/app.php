@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Czim\LaravelLocalizationRouteCache\LaravelLocalizationServiceProvider::class,
 
         /*
          * Package Service Providers...
