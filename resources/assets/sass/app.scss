@@ -8,6 +8,96 @@
 // Bootstrap
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 // @import "semantic";
+
+@font-face {
+    font-family: 'kh-moul';
+    src: url('./fonts/Moul.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+}
+@font-face {
+    font-family: 'kh-battambang';
+    src: url('./fonts/Kh-Battambang.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+}
+@font-face {
+    font-family: 'arial';
+    src: url('./fonts/arial.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+}
+@font-face {
+    font-family: 'arialbd';
+    src: url('./fonts/arialbd.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+}
+@font-face {
+    font-family: 'kaiu';
+    src: url('./fonts/kaiu.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+}
+
 .bg-yellow{
   background-color: yellow;
+}
+.brand-color{
+  color: #26247b;
+}
+.sub-brand-color{
+  color: #d3a809 !important;
+}
+.kh-moul{
+  font-family: 'kh-moul';
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 17px !important;
+}
+.kh-battambang{
+  font-family: 'kh-battambang';
+}
+.kh-battambang_menu{
+  font-family: 'kh-battambang';
+}
+.arial{
+  font-family: 'arial';
+}
+.arial_menu{
+  font-family: 'arial';
+}
+.arialbd{
+  font-family: 'arialbd';
+  font-size: 16px;
+}
+.kaiu{
+  font-family: 'kaiu';
+  font-size: 27px !important;
+  line-height: 35px;
+  font-weight: 500;
+  color: #db342d;
+}
+.kaiu_sub-brand{
+  font-family: 'kaiu';
+  font-size: 17px!important;
+}
+.kaiu_menu{
+  font-family: 'kaiu';
+  font-size: 17px !important;
 }

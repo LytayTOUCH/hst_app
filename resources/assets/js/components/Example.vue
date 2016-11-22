@@ -19,6 +19,14 @@
     </a>
     </div>
   </div>
+
+  <div id="app">
+    <button v-on:click="btn_test" class="ui primary button mini">
+      VueJS Event
+    </button>
+    <p>@{{vue_data}}</p>
+  </div>
+
 </template>
 
 <script>

@@ -1,12 +1,14 @@
 <div class="ui secondary top fixed menu" style="background-color: yellow;">
-  <a href="{{ url('/') }}" class="ui icon item">
-    <!-- <img src="/images/HST-Logo/HSTLogo.svg" title="HongStar Trademark" class="ui mini image"> -->
+  <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , '/') }}" class="ui icon item">
     <i class="home icon large"></i>
   </a>
     <div class="ui dropdown item">
-      <i class="sitemap large icon"></i>{{ trans('translang.menu_navigator') }}
+      <i class="sitemap large icon"></i>
+      <div class="{{ trans('translang.font_menu') }}">
+        {{ trans('translang.menu_navigator') }}
+      </div>
       <i class="dropdown icon"></i>
-      <div class="menu">
+      <div class="menu {{ trans('translang.font_menu') }}">
         <div class="header">{{ trans('translang.tours') }}</div>
         <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'domestic_tour.html') }}" class="item"><i class="map icon"></i>{{ trans('translang.menu_tour.domestic_tour') }}</a>
         <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'international_tour.html') }}" class="item"><i class="send outline icon"></i>{{ trans('translang.menu_tour.international_tour') }}</a>
@@ -24,15 +26,15 @@
         <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'khmer_passport.html') }}" class="item"><i class="write square icon"></i>{{ trans('translang.menu_passport.khmer_passport') }}</a>
       </div>
     </div>
-    <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'contact_us.html') }}" class="ui icon item" title="Contact Us"><i class="call large icon"></i></a>
-    <div class="ui inline dropdown item" title="Languages">
+    <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'contact_us.html') }}" class="ui icon item" title="{{ trans('translang.contact_us') }}"><i class="call large icon"></i></a>
+    <div class="ui inline dropdown item" title="{{ trans('translang.native') }}">
         <div class="ui icon text">
           <a href="#" ><i class="{{ trans('translang.lang') }} flag"></i></a>
         </div>
         <i class="dropdown icon"></i>
         <div class="menu">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-            <a class="item" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+            <a class="item" rel="alternate" title="{{$properties['native']}}" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
                 <i class="{{$localeCode}} flag"></i>
             </a>
             @endforeach

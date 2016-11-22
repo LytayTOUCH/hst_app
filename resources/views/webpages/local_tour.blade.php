@@ -3,6 +3,11 @@
   Domestic Tours
 @endsection
 @section('body')
+
+<div class="row">
+  <div class="sixteen wide column">
+
+
   <h1>Local Tour Page!</h1>
   <h4>Test broswerSync!</h4>
   <h4>Checkup with browserSync !</h4>
@@ -21,5 +26,7 @@
 
 </div>
 
+  </div>
+</div>
 
 @endsection

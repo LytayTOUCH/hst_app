@@ -232,7 +232,7 @@ return [
 		//'kk'          => ['name' => 'Kazakh',                 'script' => 'Cyrl', 'native' => 'қазақ тілі', 'regional' => 'kk_KZ'],
 		//'hy'          => ['name' => 'Armenian',               'script' => 'Armn', 'native' => 'Հայերէն', 'regional' => 'hy_AM'],
 		//'yi'          => ['name' => 'Yiddish',                'script' => 'Hebr', 'native' => 'ייִדיש', 'regional' => 'yi_US'],
-		//'he'          => ['name' => 'H{{ trans('messages.welcome') }}ebrew',                 'script' => 'Hebr', 'native' => 'עברית', 'regional' => 'he_IL'],
+		//'he'          => ['name' => 'H{{ trans('messages.w{{$localeCode}}elcome') }}ebrew',                 'script' => 'Hebr', 'native' => 'עברית', 'regional' => 'he_IL'],
 		//'ug'          => ['name' => 'Uyghur',                 'script' => 'Arab', 'native' => 'ئۇيغۇرچە', 'regional' => 'ug_CN'],
 		//'ur'          => ['name' => 'Urdu',                   'script' => 'Arab', 'native' => 'اردو', 'regional' => 'ur_PK'],
 		//'ar'          => ['name' => 'Arabic',                 'script' => 'Arab', 'native' => 'العربية', 'regional' => 'ar_AE'],
@@ -281,7 +281,7 @@ return [
 		//'iu'          => ['name' => 'Inuktitut (Canadian Aboriginal Syllabics)', 'script' => 'Cans', 'native' => 'ᐃᓄᒃᑎᑐᑦ', 'regional' => 'iu_CA'],
 		//'oj'          => ['name' => 'Ojibwa',                 'script' => 'Cans', 'native' => 'ᐊᓂᔑᓈᐯᒧᐎᓐ', 'regional' => ''],
 		//'cr'          => ['name' => 'Cree',                   'script' => 'Cans', 'native' => 'ᓀᐦᐃᔭᐍᐏᐣ', 'regional' => ''],
-		'kh'          => ['name' => 'Khmer',                  'script' => 'Khmr', 'native' => 'ភាសាខ្មែរ', 'regional' => 'km_KH'],
+		'kh'          => ['name' => 'Khmer',                  'script' => 'Khmer', 'native' => 'ភាសាខ្មែរ', 'regional' => 'km_KH'],
 		//'mn-Mong'     => ['name' => 'Mongolian (Mongolian)',  'script' => 'Mong', 'native' => 'ᠮᠣᠨᠭᠭᠣᠯ ᠬᠡᠯᠡ', 'regional' => 'mn_MN'],
 		//'shi-Tfng'    => ['name' => 'Tachelhit (Tifinagh)',   'script' => 'Tfng', 'native' => 'ⵜⴰⵎⴰⵣⵉⵖⵜ', 'regional' => ''],
 		//'tzm'         => ['name' => 'Central Atlas Tamazight (Tifinagh)','script' => 'Tfng', 'native' => 'ⵜⴰⵎⴰⵣⵉⵖⵜ', 'regional' => ''],
@@ -305,6 +305,6 @@ return [
     // IMPORTANT - When hideDefaultLocaleInURL is set to true, the unlocalized root is treated as the applications default locale "app.locale".
     // Because of this language negotiation using the Accept-Language header will NEVER occur when hideDefaultLocaleInURL is true.
     //
-	'hideDefaultLocaleInURL' => false,
+	'hideDefaultLocaleInURL' => true,
 
 ];

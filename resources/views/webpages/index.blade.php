@@ -1,78 +1,35 @@
 @extends('layouts.webpages_layout')
 @section('body')
+<div class="row">
+  <div class="sixteen wide column">
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+    </p>
+    <h1>Home Index Page!</h1>
+    <button class="ui primary button">Follow</button>
+    <p>click me</p>
+    {{ trans('translang.welcome') }}
+    <img src="/images/HST-Logo/HSTLogo.svg" title="HongStar Trademark" class="ui tiny image">
 
-<div class="ui internally celled grid">
-  <div class="row">
-    <div class="ui wide column">
-      <div class="ui internally celled grid">
-      <div class="row">
-      <div class="sixteen wide column ui center aligned">
-      <div class="column">
-      <!-- <h1 class="ui header text">Royal University of Phnom Penh</h1>
-      <img src="/assets/rupp_logo-6f90ca617ad421a17fe09bdc6953db91d4c34b481541b26b25b4e906c73df913.png" alt="Rupp logo 6f90ca617ad421a17fe09bdc6953db91d4c34b481541b26b25b4e906c73df913" width="256" height="256" /> -->
-      <img src="/images/HST-Logo/HSTLogo.svg" title="HongStar Trademark" class="ui image">
-      <div class="ui segement">
-      <!-- <h1 class="header">Master Degree of Computer Science</h1> -->
-      <h2 class="header"> Contact US Page</h2>
-      <!-- <h3 class="header">Presented By Mr. Lytay TOUCH</h3>
-      <h3 class="header">Academic Year 2015</h3> -->
-      <button class="ui icon button">
-      <i class="cloud icon"></i>
-    </button>
-      {{ trans('translang.welcome') }}
-      <i class="ui home icon"></i>
-      <h1>Webpages Index Page!</h1>
-      <h4>Test broswerSync!</h4>
-      <h4>Checkup with browserSync !</h4>
+    <div id="example">
+      <example-component></example-component>
+    </div>
 
-      <button class="ui button">
-        Follow
+    <div id="app">
+      <button v-on:click="btn_test" class="ui primary button mini">
+        VueJS Event
       </button>
-
-      <p>
-        click me
-      </p>
-
-
-      <div id="example">
-        <example-component></example-component>
-      </div>
-
-      <div id="app">
-        <button v-on:click="btn_test" class="ui primary button mini">
-          VueJS Event
-        </button>
-        <p>
-          @{{vue_data}}
-        </p>
-      </div>
-
-      {!! $form['modal'] !!}
-
-      <div class="">
-        <i class="add to calendar icon"></i> <i class="alarm outline icon"></i> <i class="alarm mute outline icon"></i> <i class="alarm mute icon"></i> <i class="alarm icon"></i> <i class="at icon"></i> <i class="browser icon"></i> <i class="bug icon"></i> <i class="calendar outline icon"></i> <i class="calendar icon"></i> <i class="checked calendar icon"></i> <i class="cloud icon"></i> <i class="code icon"></i> <i class="comment outline icon"></i> <i class="comment icon"></i> <i class="comments outline icon"></i> <i class="comments icon"></i> <i class="copyright icon"></i> <i class="creative commons icon"></i> <i class="dashboard icon"></i> <i class="delete calendar icon"></i> <i class="external square icon"></i> <i class="external icon"></i> <i class="eyedropper icon"></i> <i class="feed icon"></i> <i class="find icon"></i> <i class="hand pointer icon"></i> <i class="hashtag icon"></i> <i class="heartbeat icon"></i> <i class="history icon"></i> <i class="home icon"></i> <i class="hourglass empty icon"></i> <i class="hourglass end icon"></i> <i class="hourglass full icon"></i> <i class="hourglass half icon"></i> <i class="hourglass start icon"></i> <i class="idea icon"></i> <i class="image icon"></i> <i class="inbox icon"></i> <i class="industry icon"></i> <i class="lab icon"></i> <i class="mail outline icon"></i> <i class="mail square icon"></i> <i class="mail icon"></i> <i class="mouse pointer icon"></i> <i class="options icon"></i> <i class="paint brush icon"></i> <i class="payment icon"></i> <i class="percent icon"></i> <i class="privacy icon"></i> <i class="protect icon"></i> <i class="registered icon"></i> <i class="remove from calendar icon"></i> <i class="search icon"></i> <i class="setting icon"></i> <i class="settings icon"></i> <i class="shop icon"></i> <i class="shopping bag icon"></i> <i class="shopping basket icon"></i> <i class="signal icon"></i> <i class="sitemap icon"></i> <i class="tag icon"></i> <i class="tags icon"></i> <i class="tasks icon"></i> <i class="terminal icon"></i> <i class="text telephone icon"></i> <i class="ticket icon"></i> <i class="trademark icon"></i> <i class="trophy icon"></i> <i class="wifi icon"></i>
-      </div>
-      <div class="">
-        <i class="ae flag"></i>
-        <i class="france flag"></i>
-        <i class="myanmar flag"></i>
-      </div>
-
-
-
+      <p>@{{vue_data}}</p>
     </div>
-  </div>
 
-
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-    </div>
   </div>
 </div>
 
+<div class="column">1</div>
+<div class="column">2</div>
+<div class="column">3</div>
+<div class="column">4</div>
+</div>
 
-
+{!! $form['modal'] !!}
 @endsection

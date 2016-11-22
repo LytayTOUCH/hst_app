@@ -14,11 +14,16 @@
 </head>
 <body>
   @include('webpages.header')
-  <div class="ui fluid container" style="padding-top:43px;">
-    @yield('body')
+  <div class="ui fluid container" style="padding-top:50px;">
+    @include('webpages.brand_name')
+    <div class="ui container">
+      <div class="ui three column grid">
+        @yield('body')
+      </div>
+    </div>
+    @include('webpages.footer')
   </div>
-  @include('webpages.footer')
-    <!-- Scripts -->
+  <!-- Scripts -->
   <script src="/js/app.js"></script>
 </body>
 </html>

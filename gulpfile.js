@@ -35,6 +35,8 @@ elixir((mix) => {
       proxy: "localhost:8000",
       port: 8000
     });
-    mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets').copy('resources/assets/images/**/*.*', 'public/images');
+    mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets')
+       .copy('resources/assets/fonts/*.*', 'public/css/fonts')
+       .copy('resources/assets/images/**/*.*', 'public/images');
 
 });
