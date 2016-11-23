@@ -3,7 +3,7 @@
     <i class="home icon large"></i>
   </a>
     <div class="ui dropdown item">
-      <i class="sitemap large icon"></i>
+      <i class="sidebar large icon"></i>
       <div class="{{ trans('translang.font_menu') }}">
         {{ trans('translang.menu_navigator') }}
       </div>
@@ -23,7 +23,9 @@
         <div class="header">{{ trans('translang.passport') }}</div>
         <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'international_visa.html') }}" class="item"><i class="share alternate square icon"></i>{{ trans('translang.menu_passport.international_visa') }}</a>
         <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'khmer_visa_renew.html') }}" class="item"><i class="undo icon"></i>{{ trans('translang.menu_passport.khmer_visa_renew') }}</a>
-        <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'khmer_passport.html') }}" class="item"><i class="write square icon"></i>{{ trans('translang.menu_passport.khmer_passport') }}</a>
+        @if (trans('translang.lang') === 'kh')
+          <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'khmer_passport.html') }}" class="item"><i class="write square icon"></i>{{ trans('translang.menu_passport.khmer_passport') }}</a>
+        @endif
       </div>
     </div>
     <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'contact_us.html') }}" class="ui icon item" title="{{ trans('translang.contact_us') }}"><i class="call large icon"></i></a>

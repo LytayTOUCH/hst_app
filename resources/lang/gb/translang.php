@@ -19,7 +19,7 @@ return [
     'font_menu' => 'arial_menu',
     'lang' => 'gb',
     'native' => 'English',
-    'menu_navigator' => 'Menus',
+    'menu_navigator' => 'Menu',
     'tours' => 'Tours',
     'ticket' => 'Ticket Services',
     'passport' => 'Passport Services',
