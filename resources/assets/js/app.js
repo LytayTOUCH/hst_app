@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 require('./semantic.behavior');
-
+require('./owl.carousel.behavior');
 // require('./semantic');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
