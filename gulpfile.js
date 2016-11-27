@@ -1,5 +1,5 @@
 const elixir = require('laravel-elixir'),
-  del = require('del');
+      del = require('del');
 require('laravel-elixir-vue-2');
 
 /*

@@ -1,18 +1,7 @@
 @extends('layouts.webpages_layout')
 @section('body')
 
-<div class="row">
-
-  <div id="owl-demo" class="owl-carousel owl-theme">
-
-    <div class="item"><img src="images/owl-pic/fullimage1.jpg" alt="The Last of us"></div>
-    <div class="item"><img src="images/owl-pic/fullimage2.jpg" alt="GTA V"></div>
-    <div class="item"><img src="images/owl-pic/fullimage3.jpg" alt="Mirror Edge"></div>
-
-  </div>
-
-</div>
-
+@include('webpages.carousel_forms.carousel_image')
 <div class="row">
   <div class="sixteen wide column">
     <p>

@@ -8,7 +8,7 @@ class WebpageController extends Controller
 {
     //
     public function index(){
-      $data['test']="Test Data from Controller Index Webpages!";
+      $data['test']="Test Data from Webpages Controller In index action !";
       $form['modal']=view('webpages.forms.modal', compact('data'));
       return view('webpages.index', compact('form'));
     }
@@ -22,7 +22,9 @@ class WebpageController extends Controller
       return view('webpages.air_ticket');
     }
     public function show_bus_ticket_page(){
-      return view('webpages.bus_ticket');
+      $data['test']="Test Data from Webpages Controller In show_bus_ticket_page action !";
+      $form['modal']=view('webpages.forms.modal', compact('data'));
+      return view('webpages.bus_ticket', compact('form'));
     }
     public function show_boat_ticket_page(){
       return view('webpages.boat_ticket');

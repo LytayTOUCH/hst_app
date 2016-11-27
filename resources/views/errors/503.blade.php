@@ -2,46 +2,25 @@
 <html>
     <head>
         <title>Be right back.</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato', sans-serif;
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 72px;
-                margin-bottom: 40px;
-            }
-        </style>
-    </head>
+        <link href="/css/app.css" rel="stylesheet">
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Be right back.</div>
+        <div class="ui one column grid">
+            <div class="row">
+                <div class="sixteen wide column">
+                    <div class="ui vertical center aligned segment">
+                        <img src="/images/HST-Logo/HSTLogo.svg" alt="" class="ui centered large image">
+                        <h1>
+                            <i class="settings big icon"></i>
+                            Hong Star will be back, soon. :D
+                        </h1>
+                    </div>
+                    <div class="ui vertical center aligned segment">
+                        <h3>Hotline: +855(0)11 673767</h3>
+                        <h3>Office: +855(0)23 220 385 | +855(0)23 220 385</h3>
+                    </div>   
+                </div>
             </div>
         </div>
+        <script src="/js/app.js"></script>
     </body>
 </html>

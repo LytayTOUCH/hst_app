@@ -15,9 +15,7 @@
 <body>
   @include('webpages.header')
   @include('webpages.brand_name')
-  <div class="ui fluid container">
-    @yield('body')
-  </div>
+  @yield('body')
   @include('webpages.footer')
   <!-- Scripts -->
   <script src="/js/app.js"></script>

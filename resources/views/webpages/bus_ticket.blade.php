@@ -5,6 +5,9 @@
 @endsection
 
 @section('body')
+
+@include('webpages.carousel_forms.carousel_image')
+
 <div class="row">
   <div class="sixteen wide column">
 
@@ -16,4 +19,5 @@
 
   </div>
 </div>
+{!! $form['modal'] !!}
 @endsection
