@@ -31,5 +31,9 @@ return [
 
     'welcome' => '欢迎',
     'hello' => '你好',
+    'all_right' => '版权所有',
+    'site_map' => '网站地图',
+    'help_support' => '帮助和支持',
+    'office_location' => '办公地点',
 
 ];

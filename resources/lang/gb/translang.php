@@ -12,7 +12,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'brand_name' => 'HONG STAR Travel & Tours',
+    'brand_name' => 'HONG STAR',
     'sub-brand_name' => 'Quality, Services, Reliable',
     'fontbd'=>'arialbd',
     'font'=>'arial',
@@ -31,5 +31,9 @@ return [
 
     'welcome' => 'welcome',
     'hello' => 'hello',
+    'site_map' => 'Sites Map',
+    'help_support' => 'Help & Support',
+    'all_right' => 'All Rights Reserved',
+    'office_location' => 'Office Location',
 
 ];

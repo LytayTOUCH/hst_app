@@ -26,9 +26,13 @@ return [
     'native' => 'ភាសាខ្មែរ',
     'menu_tour' => ['domestic_tour' => 'សេវាទេសចរណ៍ក្នុងស្រុក', 'international_tour' => 'សេវាទេសចរណ៍ក្រៅស្រុក'],
     'menu_ticket' => ['air_ticket' => 'ផ្នែកសំបុត្រយន្តហោះ','bus_ticket' => 'ផ្នែកសំបុត្ររថយន្ត', 'boat_ticket' => 'ផ្នែកសំបុត្រទូក'],
-    'menu_passport' => ['international_visa' => 'សេវាស្នើសុំទិដ្ឋាកាអន្តរជាតិ', 'khmer_visa_renew' => 'សេវាពន្យាទិដ្ឋាកាកម្ពុជា', 'khmer_passport' => 'សេវាធ្វើលិខិតឆ្លងដែន'],
+    'menu_passport' => ['international_visa' => 'សេវាស្នើសុំទិដ្ឋាកា', 'khmer_visa_renew' => 'សេវាពន្យាទិដ្ឋាកាកម្ពុជា', 'khmer_passport' => 'សេវាធ្វើលិខិតឆ្លងដែន'],
 
     'welcome' => 'ស្វាគមន៍',
     'hello' => 'សួរស្តី',
+    'site_map' => 'តំណរភ្ជាប់គេហទំព័រ',
+    'help_support' => 'ជំនួយ & ការគាំទ្រ',
+    'all_right' => 'រក្សាសិទ្ធិគ្រប់យ៉ាង',
+    'office_location' => 'ទីតាំងការិយាល័យ',
 
 ];

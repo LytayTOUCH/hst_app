@@ -41,5 +41,8 @@ class WebpageController extends Controller
     public function show_contact_us_page(){
       return view('webpages.contact_us');
     }
+    public function show_office_location(){
+      return view('webpages.office_location');
+    }
 
 }

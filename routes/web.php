@@ -22,4 +22,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
   Route::get('/khmer_visa_renew.html','WebpageController@show_khmer_visa_renew_page');
   Route::get('/khmer_passport.html','WebpageController@show_khmer_passport_page');
   Route::get('/contact_us.html','WebpageController@show_contact_us_page');
+  Route::get('/office_location.html','WebpageController@show_office_location');
 });

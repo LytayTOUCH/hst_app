@@ -15,8 +15,8 @@
                         </h1>
                     </div>
                     <div class="ui vertical center aligned segment">
-                        <h3>Hotline: +855(0)11 673767</h3>
-                        <h3>Office: +855(0)23 220 385 | +855(0)23 220 385</h3>
+                        <h4>Hotline: +855(0)11 673767</h4>
+                        <h4>Office: +855(0)23 220 385 | +855(0)23 220 385</h4>
                     </div>   
                 </div>
             </div>
