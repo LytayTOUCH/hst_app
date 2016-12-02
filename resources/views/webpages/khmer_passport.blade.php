@@ -5,22 +5,34 @@
 @endsection
 
 @section('body')
-<div class="row">
-  <div class="sixteen wide column">
+  
 
 
-  <h1>Khmer Passport Page!</h1>
-  <h4>Test broswerSync!</h4>
-  <h4>Checkup with browserSync !</h4>
+<div class="ui container">
+  <div class="ui one centered column grid">
+    
+      <div class="row">
+        <div class="sixteen wide column">
+          
+          <div class="ui basic segment">
+            <h3 class="ui dividing {{ trans('translang.font_menu') }}">
+            <i class="write square icon"></i>{{ trans('translang.khmer_passport') }}
+            <div class="ui fitted divider"></div>
+          </h3>
+            
+            <div class="ui content​ {{ trans('translang.font_menu') }}">
+              
+              <p>តំរូវការឯកសារ អត្តសញញាណបត្ត និង សៀវភៅគ្រួសារ</p>
 
-  <button class="ui primary button">
-    Follow
-  </button>
+            </div>
 
-<p>
-  click me
-</p>
+          </div>        
+          
+        </div>
+      </div>
 
   </div>
 </div>
+
+
 @endsection

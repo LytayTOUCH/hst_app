@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    $("p").click(function(){
-        $('.ui.modal').modal({
-          duration: 200
-        }).modal('show');
-    });
     $('.ui.dropdown').dropdown();
+    $('.location_modal').click(function(e){
+    	e.preventDefault();
+    	$('.ui.modal.location').modal({
+    		duration: 100
+    	}).modal('show');
+    });
 });

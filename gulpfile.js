@@ -28,19 +28,19 @@ elixir((mix) => {
        .webpack(['app.js',
                  './resources/assets/vendors/semantic-ui/dist/semantic.js',
                  './resources/assets/vendors/owl-carousel/*.min.js'
-               ], 'public/js/app.js')
+               ])
        .browserSync({
-      files: [
-        'gulpfile.js',
-        'public/css/*.css',
-        'resources/assets/**/*',                     // This is the one required to get the CSS to inject
-        'resources/views/**/*.blade.php',       // Watch the views for changes & force a reload
-        'app/**/*.php',
-        'routes/**/*.php',                      // Watch the app files for changes & force a reload
-      ],
-      proxy: "localhost:8000",
-      port: 8000
-    });
+          files: [
+            'gulpfile.js',
+            'public/css/*.css',
+            'resources/assets/**/*',                     // This is the one required to get the CSS to inject
+            'resources/views/**/*.blade.php',       // Watch the views for changes & force a reload
+            'app/**/*.php',
+            'routes/**/*.php',                      // Watch the app files for changes & force a reload
+          ],
+          proxy: "localhost:8000",
+          port: 8000
+        });
     mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets')
        .copy('resources/assets/fonts/*.*', 'public/css/fonts')
        .copy('resources/assets/images/**/*.*', 'public/images');

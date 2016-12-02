@@ -29,11 +29,18 @@ return [
     'menu_passport' => ['international_visa' => 'International VISA', 'khmer_visa_renew' => 'Khmer VISA Renew', 'khmer_passport' => 'Khmer Passport'],
 
 
-    'welcome' => 'welcome',
+    'welcome' => 'Welcome',
     'hello' => 'hello',
+    'contact_title' => 'Contact for detail',
     'site_map' => 'Sites Map',
     'help_support' => 'Help & Support',
     'all_right' => 'All Rights Reserved',
     'office_location' => 'Office Location',
-
+    'office_address' => 'Address: #76, St. 163, Toul Tom Poung 2, Khan Chamkamon, Phnom Penh, Cambodia.',
+    'phone' => 'Phone',
+    'mail' => 'Mail',
+    'tour_contact' => 'Contact Tours Operator Team',
+    'ticketing_contact' =>'Contact Ticketing Operator Team',
+    'passport_contact' =>'Contact VISA & Passport Operator & General Management Team',
+    'messenger_contact' =>'Contact Messenger Team',
 ];

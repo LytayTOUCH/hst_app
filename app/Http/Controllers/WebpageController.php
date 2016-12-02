@@ -36,13 +36,10 @@ class WebpageController extends Controller
       return view('webpages.khmer_visa_renew');
     }
     public function show_khmer_passport_page(){
-      return view('webpages.contact_us');
+      return view('webpages.khmer_passport');
     }
     public function show_contact_us_page(){
       return view('webpages.contact_us');
-    }
-    public function show_office_location(){
-      return view('webpages.office_location');
     }
 
 }

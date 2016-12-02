@@ -29,11 +29,19 @@ return [
     'menu_passport' => ['international_visa' => '服务请求国际签证', 'khmer_visa_renew' => '服务延伸柬埔寨签证', 'khmer_passport' => '护照服务'],
 
 
-    'welcome' => '欢迎',
+    'welcome' => '歡迎',
     'hello' => '你好',
     'all_right' => '版权所有',
     'site_map' => '网站地图',
     'help_support' => '帮助和支持',
     'office_location' => '办公地点',
+    'office_address' => '地址: 屋號 76, 路號 163, 附近 吐湯姆傍2, 金邊, 柬埔寨',
+    'phone' => '電話',
+    'mail' => '郵寄',
+    'contact_title' => '聯繫細節',
+    'tour_contact' => '聯繫旅遊運營團隊',
+    'ticketing_contact' =>'聯繫售票操作員團隊',
+    'passport_contact' =>'聯繫護照操一般管理作員團隊',
+    'messenger_contact' => '接觸信使',
 
 ];
