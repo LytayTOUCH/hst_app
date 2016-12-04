@@ -1,7 +1,9 @@
 @extends('layouts.webpages_layout')
+
 @section('title')
-  International Tours
+  {{ trans('translang.menu_tour.international_tour') }}
 @endsection
+
 @section('body')
 <div class="row">
   <div class="sixteen wide column">

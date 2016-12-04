@@ -1,4 +1,8 @@
 @extends('layouts.webpages_layout')
+@section('title')
+  {{ trans('translang.brand_name') }}
+@endsection
+
 @section('body')
 
 @include('webpages.carousel_forms.carousel_image')

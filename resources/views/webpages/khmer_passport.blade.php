@@ -1,7 +1,7 @@
 @extends('layouts.webpages_layout')
 
 @section('title')
-  Khmer Passport
+  {{ trans('translang.menu_passport.khmer_passport') }}
 @endsection
 
 @section('body')

@@ -1,7 +1,7 @@
 @extends('layouts.webpages_layout')
 
 @section('title')
-  Khmer VISA Renew
+  {{ trans('translang.menu_passport.khmer_visa_renew') }}
 @endsection
 
 @section('body')

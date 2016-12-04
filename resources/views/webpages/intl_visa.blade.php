@@ -1,7 +1,7 @@
 @extends('layouts.webpages_layout')
 
 @section('title')
-  International VISA
+  {{ trans('translang.menu_passport.international_visa') }}
 @endsection
 
 @section('body')

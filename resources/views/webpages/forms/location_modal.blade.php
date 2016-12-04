@@ -1,4 +1,4 @@
-<div class="ui modal location ">
+<div class="ui basic modal location ">
   <i class="close icon"></i>
   <div class="ui content" style="padding-bottom: 0px;">
     <h3 class="ui dividing {{ trans('translang.font_menu') }}">

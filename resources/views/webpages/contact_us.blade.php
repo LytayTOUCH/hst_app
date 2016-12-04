@@ -9,6 +9,35 @@
 <div class="ui container">
   <div class="ui one centered column grid">
     
+    <div class="row">
+      <div class="sixteen wide column">
+        
+      <div class="ui basic segment">
+        <h3 class="ui dividing {{ trans('translang.font_menu') }}">
+            <i class="marker icon"></i>{{ trans('translang.office_location') }}
+            <div class="ui fitted divider"></div>
+        </h3>
+        <div class="ui content {{ trans('translang.font_menu') }}">
+          <p class="ui text">
+            <i class="home meduim icon"></i>{{ trans('translang.office_address') }}
+          </p>
+          <p class="ui text">
+            <i class="phone icon"></i>{{ trans('translang.phone') }} : +855(0)23 220 385 / +855(0)23 220 386
+          </p>
+          <p class="ui text">
+            <i class="mobile icon"></i>{{ trans('translang.phone') }} : +855(0)11 67 37 67
+          </p>
+          <p class="ui text">
+            <i class="mail icon"></i>{{ trans('translang.mail') }} : info@hongstartravel.com
+          </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.170473163958!2d104.91424400000002!3d11.539626000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950e0954710a5%3A0x2ddb7e612390ca!2sHong+Star+Travel+%26+Tours!5e0!3m2!1sen!2skh!4v1417934544742" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+
+      </div>
+      
+      </div>
+    </div>
+
         <div class="row">
           <div class="sixteen wide column">
             
@@ -25,7 +54,7 @@
                       <div class="ui hidden fitted divider"></div>
                     </p>
                   
-                  <div class="ui centered cards">
+                  <div class="ui cards">
                       
                       <!-- <div class="card">
                         <div class="content">
@@ -101,7 +130,7 @@
                     <div class="ui hidden fitted divider"></div>
                   </p>
                 
-                  <div class="ui centered cards">
+                  <div class="ui cards">
                     
                     <div class="card">
                       <div class="content">
@@ -155,7 +184,7 @@
                     <div class="ui hidden fitted divider"></div>
                   </p>
                 
-                  <div class="ui centered cards">
+                  <div class="ui cards">
                       
                       <div class="card">
                         <div class="content">
@@ -196,7 +225,7 @@
                     <div class="ui hidden fitted divider"></div>
                   </p>
                 
-                  <div class="ui centered cards">
+                  <div class="ui cards">
                       
                       <div class="card">
                         <div class="content">
@@ -231,34 +260,6 @@
       </div>
     </div>
     
-    <div class="row">
-      <div class="sixteen wide column">
-        
-      <div class="ui basic segment">
-        <h3 class="ui dividing {{ trans('translang.font_menu') }}">
-            <i class="marker icon"></i>{{ trans('translang.office_location') }}
-            <div class="ui fitted divider"></div>
-        </h3>
-        <div class="ui content {{ trans('translang.font_menu') }}">
-          <p class="ui text">
-            <i class="home meduim icon"></i>{{ trans('translang.office_address') }}
-          </p>
-          <p class="ui text">
-            <i class="phone icon"></i>{{ trans('translang.phone') }} : +855(0)23 220 385 / +855(0)23 220 386
-          </p>
-          <p class="ui text">
-            <i class="mobile icon"></i>{{ trans('translang.phone') }} : +855(0)11 67 37 67
-          </p>
-          <p class="ui text">
-            <i class="mail icon"></i>{{ trans('translang.mail') }} : info@hongstartravel.com
-          </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.170473163958!2d104.91424400000002!3d11.539626000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950e0954710a5%3A0x2ddb7e612390ca!2sHong+Star+Travel+%26+Tours!5e0!3m2!1sen!2skh!4v1417934544742" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-        </div>
-
-      </div>
-      
-      </div>
-    </div>
 
 
 

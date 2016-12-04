@@ -1,7 +1,7 @@
 @extends('layouts.webpages_layout')
 
 @section('title')
-  Bus Ticket
+  {{ trans('translang.menu_ticket.bus_ticket') }}
 @endsection
 
 @section('body')

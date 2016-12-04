@@ -29,6 +29,7 @@
       </div>
     </div>
     <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'contact_us.html') }}" class="ui icon item" title="{{ trans('translang.contact_us') }}"><i class="call large icon"></i></a>
+    
     <div class="ui inline dropdown item" title="{{ trans('translang.native') }}">
         <div class="ui icon text">
           <a href="#" ><i class="{{ trans('translang.lang') }} flag"></i></a>

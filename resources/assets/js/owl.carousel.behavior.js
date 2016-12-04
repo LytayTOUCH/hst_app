@@ -7,9 +7,19 @@ $(document).ready(function() {
   });
 
   $("#owl-demo").owlCarousel({
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      stopOnHover: true,
+      autoPlay: 3000,
+      autoHeight: true
+
+  });
+
+  $("#carousel_air_ticket").owlCarousel({
 
       // Most important owl features
-    items : 5,
+    items : 1,
     itemsCustom : false,
     itemsDesktop : [1199,4],
     itemsDesktopSmall : [980,3],
@@ -22,7 +32,7 @@ $(document).ready(function() {
     //Basic Speeds
     slideSpeed : 200,
     paginationSpeed : 400,
-    rewindSpeed : 1000,
+    rewindSpeed : 3000,
  
     //Autoplay
     autoPlay : 3000,
@@ -71,15 +81,33 @@ $(document).ready(function() {
     addClassActive : false,
  
     //Callbacks
-    beforeUpdate : false,
-    afterUpdate : false,
-    beforeInit: false, 
-    afterInit: false, 
-    beforeMove: false, 
-    afterMove: false,
-    afterAction: false,
-    startDragging : false,
-    afterLazyLoad : false
+    beforeUpdate : function(){
+        console.log('beforeUpdate');
+    },
+    afterUpdate : function(){
+        console.log('afterUpdate');
+    },
+    beforeInit: function(){
+        console.log('beforeInit');
+    }, 
+    afterInit: function(){
+        console.log('afterInit');
+    }, 
+    beforeMove: function(){
+        console.log('beforeMove');
+    }, 
+    afterMove: function(){
+        console.log('afterMove');
+    },
+    afterAction: function(){
+        console.log('afterAction');
+    },
+    startDragging : function(){
+        console.log('startDragging');
+    },
+    afterLazyLoad : function(){
+        console.log('afteLazyLoad');
+    }
 
   });
 

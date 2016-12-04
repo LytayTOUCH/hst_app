@@ -1,0 +1,1 @@
+tour_carousel_image.blade.php

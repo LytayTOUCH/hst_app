@@ -17,7 +17,6 @@
   @include('webpages.brand_name')
   @yield('body')
   @include('webpages.footer')
-
   @include('webpages.forms.location_modal')
   <!-- Scripts -->
   <script src="/js/all.js"></script>

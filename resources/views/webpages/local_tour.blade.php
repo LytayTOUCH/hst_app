@@ -1,7 +1,9 @@
 @extends('layouts.webpages_layout')
+
 @section('title')
-  Domestic Tours
+  {{ trans('translang.menu_tour.domestic_tour') }}
 @endsection
+
 @section('body')
 
 <div class="row">
