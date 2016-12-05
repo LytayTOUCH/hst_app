@@ -23,11 +23,11 @@ elixir((mix) => {
     mix.remove(['public/css/**/*.*', 'public/js/**/*.*', 'public/images/**/*.*'])
        .sass(['app.scss',
               './resources/assets/vendors/semantic-ui/dist/semantic.css',
-              './resources/assets/vendors/owl-carousel/*.css'
+              './resources/assets/vendors/owl-carousel-ii/assets/*.min.css'
               ], 'public/css/app.css')
        .webpack(['app.js',
                  './resources/assets/vendors/semantic-ui/dist/semantic.js',
-                 './resources/assets/vendors/owl-carousel/*.min.js'
+                 './resources/assets/vendors/owl-carousel-ii/*.min.js'
                ])
        .browserSync({
           files: [

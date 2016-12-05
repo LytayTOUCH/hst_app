@@ -88,13 +88,13 @@
 <div class="ui container">
   <div class="ui stackable centered three column grid">
     <div class="five wide column">
-      @include('webpages.facebook_page_plugin.facebook_hongstartravel')
+      <!-- @include('webpages.facebook_page_plugin.facebook_hongstartravel') -->
     </div>
     <div class="five wide column">
-      @include('webpages.facebook_page_plugin.facebook_hongstarticketing')
+      <!-- @include('webpages.facebook_page_plugin.facebook_hongstarticketing') -->
     </div>
     <div class="five wide column">
-      @include('webpages.facebook_page_plugin.facebook_hongstarpassport')
+      <!-- @include('webpages.facebook_page_plugin.facebook_hongstarpassport') -->
     </div>
   </div>
 </div>
