@@ -41,5 +41,15 @@ class WebpageController extends Controller
     public function show_contact_us_page(){
       return view('webpages.contact_us');
     }
+    public function show_payment_methods_page(){
+      return view('webpages.payment_method');
+    }
+    public function show_use_condition_page(){
+      return view('webpages.use_condition');
+    }
+    public function get_json(){
+      // return response()      ->json(['name' => 'Abigail', 'state' => 'CA']);
+      return response()->json(["name"=>"Jamely", "dob"=>"27-04-1988"]);
+    }
 
 }

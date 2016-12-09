@@ -1,5 +1,7 @@
-<div class="row">
-
+<div class="ui one column grid">
+    <div class="sixteen wide column">
+        
+    
   <div id="carousel_air_ticket" class="owl-carousel owl-theme owl-autoWidth">
 
     <div class="item">
@@ -13,6 +15,8 @@
     <div class="item">
         
         <div class="item">
+        <div class="ui container">
+            
         <form class="ui form">
   <h4 class="ui dividing header">Shipping Information</h4>
   <div class="field">
@@ -458,3 +462,5 @@
   </div>
 
 </div>
+        </div>
+</div>.

@@ -21,6 +21,20 @@ var comVueEx = new Vue({
   el: '#example'
 });
 
+const app_test = new Vue({
+    el: '#app_test',
+    data: {
+      vue_data: "Hello VueJS !"
+    },
+    methods:{
+      btn_test(){
+        // console.log("Btn Test VueJS is clicked!");
+        this.vue_data = this.vue_data.split('').reverse().join('');
+        console.log('btn_test triggered !');
+      }
+    }
+});
+
 const app = new Vue({
     el: '#app',
     data: {
@@ -29,7 +43,8 @@ const app = new Vue({
     methods:{
       btn_test(){
         // console.log("Btn Test VueJS is clicked!");
-        this.vue_data = this.vue_data.split('').reverse().join('')
+        this.vue_data = this.vue_data.split('').reverse().join('');
+        alert('btn_test triggered !');
       }
     }
 });

@@ -4,9 +4,16 @@
   {{ trans('translang.menu_ticket.bus_ticket') }}
 @endsection
 
+@section('slide_box')
+	@include('webpages.carousel_forms.carousel_image')
+@endsection
+
 @section('body')
 
-@include('webpages.carousel_forms.carousel_image')
+<div class="ui large text {{ trans('translang.font_menu') }}">
+  <i class="bus icon"></i> {{ trans('translang.menu_ticket.bus_ticket') }}
+  <div class="ui divider"></div>
+</div>
 
 <div class="row">
   <div class="sixteen wide column">

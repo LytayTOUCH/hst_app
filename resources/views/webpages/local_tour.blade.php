@@ -6,6 +6,11 @@
 
 @section('body')
 
+<div class="ui large text {{ trans('translang.font_menu') }}">
+  <i class="map icon"></i> {{ trans('translang.menu_tour.domestic_tour') }}
+  <div class="ui divider"></div>
+</div>
+
 <div class="row">
   <div class="sixteen wide column">
 

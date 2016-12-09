@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('auth:api');
+
+Route::get('/get_jason', 'WebpageController@get_json');
+
+Route::get('/get_json', function(){
+	// return '[{"name":"Jamely", "dob":"27-04-1988" }]';
+	return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+});

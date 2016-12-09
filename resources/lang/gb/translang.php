@@ -43,4 +43,26 @@ return [
     'ticketing_contact' =>'Contact Ticketing Operator Team',
     'passport_contact' =>'Contact VISA & Passport Operator & General Management Team',
     'messenger_contact' =>'Contact Messenger Team',
+    'about' => 'About',
+    'who_are_we'=>'Who are we ?',
+    'who_are_we_desc' => 'Hong Star Travel & Tours is one of the best tour service provider and travel agent in Cambodia. We are professionally providing your trip to the flight of your destination with many years’ experience of bus, boat and air ticketing. We are specializing in hospitality and tourism industry locally and internationally.',
+    'what_we_do' =>'What we do for you?',
+    'what_we_do_desc' => 'We are also providing VISA extension service and local passport application service for domestic client. Moreover, there are also in-bound and out-bound tours for international and local people as they wish to take for their leisure in holiday or vocation.',
+    'page_not_found' => 'The page is not found ! Any problem, please contact us.',
+    'client' => 'Our Clients',
+    'social_media' => 'Social Media',
+    'payment_method' => 'Payment Methods',
+    'use_condition' => 'Condition of Use',
+    'position' => [
+        'gm' => 'General Manager',
+        'dgm' => 'Deputy General Manager',
+        'dga' => 'Deputy General Assistant',
+        'acc' => 'Accounting Assistant',
+        'pass' => 'Passport Assistant',
+        'tm' => 'Tour Manager',
+        'to' => 'Tour Operator',
+        'ticketing' => 'Sale & Ticketing Officer',
+        'messenger' => 'Passport & VISA Messenger'
+    ],
+
 ];

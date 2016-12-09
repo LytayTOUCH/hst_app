@@ -4,10 +4,17 @@
   {{ trans('translang.menu_ticket.air_ticket') }}
 @endsection
 
+@section('slide_box')
+    @include('webpages.carousel_forms.air_ticket_carousel_image')
+@endsection
 
 @section('body')
 
-@include('webpages.carousel_forms.air_ticket_carousel_image')
+<div class="ui large text {{ trans('translang.font_menu') }}">
+  <i class="plane icon"></i> {{ trans('translang.menu_ticket.air_ticket') }}
+  <div class="ui divider"></div>
+</div>
+
 
 <div class="ui fluid container">
 	<div class="ui one centered column grid">

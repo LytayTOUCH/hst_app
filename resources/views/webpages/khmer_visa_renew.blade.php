@@ -6,6 +6,12 @@
 
 @section('body')
 
+<div class="ui large text {{ trans('translang.font_menu') }}">
+  <i class="undo icon"></i>
+  {{ trans('translang.menu_passport.khmer_visa_renew') }}
+  <div class="ui divider"></div>
+</div>
+
 <div class="row">
   <div class="sixteen wide column">
 

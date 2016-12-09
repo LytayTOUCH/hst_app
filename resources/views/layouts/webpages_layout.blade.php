@@ -13,11 +13,18 @@
     <script>window.HongStar = <?php echo json_encode(['csrfToken' => csrf_token(),]); ?></script>
 </head>
 <body>
+  <div class="ui fluid container">
   @include('webpages.header')
   @include('webpages.brand_name')
-  @yield('body')
+  @yield('slide_box')
+    <div class="ui one column grid">
+      <div class="ui fifteen wide column centered">
+        @yield('body')
+      </div>
+    </div>
   @include('webpages.footer')
   @include('webpages.forms.location_modal')
+  </div>
   <!-- Scripts -->
   <script src="/js/all.js"></script>
 </body>

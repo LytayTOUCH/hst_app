@@ -22,4 +22,15 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
   Route::get('/khmer_visa_renew.html','WebpageController@show_khmer_visa_renew_page');
   Route::get('/khmer_passport.html','WebpageController@show_khmer_passport_page');
   Route::get('/contact_us.html','WebpageController@show_contact_us_page');
+  Route::get('/payment_methods.html','WebpageController@show_payment_methods_page');
+  Route::get('/use_condition.html','WebpageController@show_use_condition_page');
+
+  //Restfull API with localization route
+  Route::get('/get_jason', 'WebpageController@get_json');
+
+  Route::get('/get_json', function(){
+    // return '[{"name":"Jamely", "dob":"27-04-1988" }]';
+    return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+  });
+  
 });

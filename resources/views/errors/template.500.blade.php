@@ -8,11 +8,18 @@
             <div class="row">
                 <div class="sixteen wide column">
                     <div class="ui vertical center aligned segment">
-                        <img src="/images/HST-Logo/HSTLogo.svg" alt="" class="ui centered large image">
-                        <h1>
-                            <i class="settings big icon"></i>
-                            Hong Star will be back, soon. :D
-                        </h1>
+                        <div class="ui image">
+                            <a href="/">
+                                <img src="/images/HST-Logo/HSTLogo.svg" alt="" class="ui centered large image">
+                            </a>
+                        </div>
+                        
+                        <div class="ui red header">
+                            <p class="ui large text {{ trans('translang.font_menu') }}">
+                                <i class="settings big icon"></i>
+                                {{ trans('translang.page_not_found') }}
+                            </p>
+                        </div>
                     </div>
                     <div class="ui vertical center aligned segment">
                         <h4>Hotline: +855(0)11 673767</h4>
