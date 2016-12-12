@@ -59,6 +59,7 @@
             <div class="ui small list">
               
               <a target="_blank" href="http://www.facebook.com/hongstartravel" class="item"><i class="facebook square icon"></i> {{trans('translang.social_media')}} </a>
+
             </div>
             <!-- <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'air_ticket.html') }}"><i class="plane icon"></i>{{ trans('translang.menu_ticket.air_ticket') }}</a> -->
           <div class="item">
@@ -72,7 +73,7 @@
         </div>
         <div class="column">
           <div class="ui small list">
-            <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'payment_methods.html') }}" class="item"><i class="dollar icon"></i>{{ trans('translang.payment_method') }}</a>
+            <!-- <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'payment_methods.html') }}" class="item"><i class="dollar icon"></i>{{ trans('translang.payment_method') }}</a> -->
             <a href="{{ LaravelLocalization::getLocalizedURL(trans('translang.lang') , 'use_condition.html') }}" class="item"><i class="file text outline icon"></i>{{ trans('translang.use_condition') }}</a>
           </div>
           

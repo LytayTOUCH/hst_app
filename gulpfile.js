@@ -38,7 +38,7 @@ elixir((mix) => {
             'app/**/*.php',
             'routes/**/*.php',                      // Watch the app files for changes & force a reload
           ],
-          proxy: "localhost:8000",
+          proxy: "http://localhost:8000",
           port: 8000
         });
     mix.copy('resources/assets/vendors/semantic-ui/dist/themes/default/assets', 'public/css/themes/default/assets')

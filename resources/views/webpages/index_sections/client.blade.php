@@ -1,5 +1,5 @@
 <div class="ui large text {{ trans('translang.font_menu') }}">
-    <b>{{ trans('translang.client') }}</b>
+    {{ trans('translang.client') }}
     <div class="ui divider"></div>
   </div>
   

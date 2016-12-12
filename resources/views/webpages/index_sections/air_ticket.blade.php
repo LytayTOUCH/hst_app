@@ -1,5 +1,5 @@
 <div class="ui large text {{ trans('translang.font_menu') }}">
-          <b><i class="plane icon"></i> {{ trans('translang.menu_ticket.air_ticket') }}</b>
+          <i class="plane icon"></i> {{ trans('translang.menu_ticket.air_ticket') }}
           <div class="ui divider"></div>
         </div>
         

@@ -1,5 +1,5 @@
 <div class="ui large text {{ trans('translang.font_menu') }}">
-          <b><i class="map icon"></i> {{ trans('translang.menu_tour.domestic_tour') }}</b>
+          <i class="map icon"></i> {{ trans('translang.menu_tour.domestic_tour') }}
           <div class="ui divider"></div>
         </div>
         
